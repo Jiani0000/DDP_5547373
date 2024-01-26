@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>restaurant information <input type="search" name="" id="" value="" /></title>
+</head>
+<body>
+
+<p>
+<a href="#C4">restaurant 4</a>
+</p>
+
+<h2>restaurant 1</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 2</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 3</h2>
+<p>detailed information……</p>
+
+<h2><a id="C4">restaurant 4</a></h2>
+<p>detailed information……</p>
+
+<h2>restaurant 5</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 6</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 7</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 8</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 9</h2>
+<p>detailed information……</p>
+
+<h2>restaurant 10</h2>
+<p>detailed information……</p>
+
+</body>
+</html>
