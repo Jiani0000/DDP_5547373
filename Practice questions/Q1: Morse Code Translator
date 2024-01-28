@@ -1,0 +1,82 @@
+"""
+Morse Code Translator Function
+
+Objective:
+Write a function named 'morse_translator' that translates a given string into Morse code.
+
+Function Parameter:
+text (string): The string to be translated into Morse code.
+
+Instructions:
+- Each alphabetic character in the string should be translated to its corresponding Morse code equivalent.
+- The Morse code for each character should be separated by a space.
+- Each word in the string should be separated by a forward slash (/).
+- The function should handle both uppercase and lowercase alphabetic characters.
+- The function should be case-insensitive, meaning it treats uppercase and lowercase letters the same.
+- Non-alphabetic characters (like numbers or symbols) should not be translated.
+- https://en.wikipedia.org/wiki/Morse_code
+
+Example Test Cases:
+1. morse_translator("HELLO WORLD") should return the Morse code for the given string.
+2. morse_translator("Python") should return the Morse code for the given string.
+3. morse_translator("Morse Code") should return the Morse code for the given string.
+"""
+
+
+def morse_translator(text):
+    # Morse code mapping
+    morse_code_dict = {
+        "A": ".-",
+        "B": "-...",
+        "C": "-.-.",
+        "D": "-..",
+        "E": ".",
+        "F": "..-.",
+        "G": "--.",
+        "H": "....",
+        "I": "..",
+        "J": ".---",
+        "K": "-.-",
+        "L": ".-..",
+        "M": "--",
+        "N": "-.",
+        "O": "---",
+        "P": ".--.",
+        "Q": "--.-",
+        "R": ".-.",
+        "S": "...",
+        "T": "-",
+        "U": "..-",
+        "V": "...-",
+        "W": ".--",
+        "X": "-..-",
+        "Y": "-.--",
+        "Z": "--..",
+    }
+
+   text = text.upper()
+
+    morse_code = []
+    for char in text:
+        if char in morse_code_dict:
+            #如果当前字符在字典中，这行代码将找到的摩尔斯电码添加到 morse_code 列表中
+            morse_code.append(morse_code_dict[char])
+        elif char == " ":
+            #如果字符是空格，就改成/
+            morse_code.append("/")
+    #" "（空格）是用作分隔符的字符串。这意味着列表中的每个摩尔斯电码元素将通过一个空格来连接。
+    return " ".join(morse_code)
+
+    # Your code goes here
+    # Remember to consider both upper and lower case letters, and spaces
+    # The function should return the translated Morse code string
+
+
+# Test cases
+print(
+    morse_translator("HELLO WORLD")
+)  # Expected output: ".... . .-.. .-.. --- / .-- --- .-. .-.. -.."
+print(morse_translator("Python"))  # Expected output: ".--. -.-- - .... --- -."
+print(
+    morse_translator("Morse Code")
+)  # Expected output: "-- --- .-. ... . / -.-. --- -.. ."
