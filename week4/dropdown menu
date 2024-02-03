@@ -1,0 +1,39 @@
+.dropdown button {
+    background-color: #333; /* 按钮背景色 */
+    border: none; /* 去除边框 */
+    color: white; /* 文本颜色 */
+    padding: 14px 16px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标悬停时的指针形状 */
+  }
+  
+  /* 下拉内容的容器，初始时不显示 */
+  .dropdown-options {
+    display: none; /* 默认不显示 */
+    position: absolute; /* 绝对定位 */
+    background-color: #f9f9f9; /* 背景色 */
+    min-width: 160px; /* 最小宽度 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 阴影效果 */
+    z-index: 1; /* 确保下拉菜单在其他内容之上 */
+  }
+  
+  /* 下拉内容的链接样式 */
+  .dropdown-options a {
+    float: none; /* 不浮动 */
+    color: black; /* 文本颜色 */
+    padding: 12px 16px; /* 内边距 */
+    text-decoration: none; /* 去除下划线 */
+    display: block; /* 显示为块元素 */
+    text-align: left; /* 文本左对齐 */
+  }
+  
+  /* 链接和按钮的悬停效果 */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555; /* 悬停时的背景色 */
+  }
+  
+  /* 下拉菜单的悬停效果，显示下拉内容 */
+  .dropdown:hover .dropdown-options {
+    display: block; /* 悬停时显示 */
+  }
+  
